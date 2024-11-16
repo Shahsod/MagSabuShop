@@ -1,0 +1,491 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,800;1,800&family=Roboto&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+
+* {
+	margin: 0;
+	padding: 0;
+	/* user-select: none; */
+}
+
+body {
+    background: url('https://sun9-23.userapi.com/impg/8M2x8NyplWe4l6rZC0aYxH9SW6Ad1SteFFBCWQ/nrxQX_nunl8.jpg?size=640x640&quality=95&sign=bab5568e21776389df1815a7724a7b18&type=album') no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: "Dancing Script";
+    color: wheat;
+    font-weight: bold;
+    font-size: 20px;
+    width: 95%;
+ }
+
+ .bgvideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -9999;
+    object-fit: cover;
+ }
+ 
+
+ /* Шапка сайта */
+
+header .logo {
+    /* color: rgb(26, 24, 24); */
+    color: #fff;
+    text-transform: uppercase;
+	font-size: 27px;
+	font-weight: bold;
+    /* background:  #fa9021; */
+    margin: 15px;
+    border-radius: 10px;
+    height: 50px;
+    box-shadow: 10px 7px 7px;
+}
+
+header .logo:hover {
+    font-size: 30px;
+    font-weight: bolder;
+    box-shadow: 14px 10px 10px;
+    transition: all 600ms ease; 
+    background: gold;
+}
+
+ a {
+    text-decoration: none;
+ }
+
+ .container {
+    width: 100%;
+    margin: 0 auto;
+    /* background: linear-gradient(90deg, rgb(107, 51, 51) 10%, #fff 98% ); */
+   overflow-x: hidden;
+ }
+
+ header {
+    padding: 50px 0;
+ }
+
+ header nav {
+    float: right;
+ }
+
+ header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+ }
+
+ header nav ul li {
+    display: inline-block;
+ }
+
+ header nav ul li .active {
+   color: rgb(38, 38, 255);
+   font-weight: 550;
+ }
+
+ header nav ul li a {
+    color: #fff;
+    padding: 0 45px ;
+    border-radius: 5px;
+    transition: all 500ms ease;
+    box-shadow: 3px 2px 2px;
+ }
+
+ header nav ul li a:hover {
+   background: rgb(56, 56, 136);
+   font-size: 20px;
+   font-weight: 700;
+ }
+
+ .audio1 {
+    text-align: center;
+    color: #fff;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+.audio1 audio {
+    width: 40%;
+    height: 35px;
+    margin-top: 10px;
+
+}
+
+ /* Секция с Приветствием */
+
+.types {
+    position: relative;
+   padding: 60px 7px;
+}
+
+/* .types ul {
+    width: 10%;
+    height: 30%;
+    display: block;
+    float: left;
+}
+
+.types ul > li > a {
+    text-align: center;
+    width: 100%;
+    color: blue;
+    font-size: 27px;
+    font-weight: 600;
+    display: flex;
+    margin: 30px 7px;
+    border-radius: 7px;
+    background:  wheat;
+    box-shadow: 7px 5px 5px;
+    opacity: 0.85;
+}
+
+.types ul > li > a:hover {
+    font-size: 32px;
+    font-weight: 650;
+    transition: all 500ms ease;
+    box-shadow: 10px 8px 8px;
+    background: rgb(247, 159, 188);
+} */
+
+.types .maine p {
+    position: relative;
+    float: right;
+    color: white;
+    font-size: 27px;
+    font-weight: 600;
+    padding: 15px 1px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 7px 5px 5px;
+    /* background: wheat; */
+    height: 300px;
+    border-radius: 17px;
+}
+
+
+/* Секция с ознакомлением с товаром*/
+
+
+.goods .container .main {
+    padding-top: 49px;
+    margin-bottom: 90px;
+    width: 100%;
+    overflow: hidden;
+    box-sizing: inherit;
+    text-align: center;
+    margin-left: 60px;
+    color: #fff;
+}
+
+.goods .container .main h2 {
+    font-weight: 700;
+    font-size: 35px;
+    padding-bottom: 20px;
+}
+
+.goods .container .main h3 {
+    padding-bottom: 20px;
+    font-size: 25px;
+}
+
+.goods .container .main .hr {
+    width: 100%;
+    background: #fff;
+    height: 2px;
+    box-shadow: 4px 2px 2px;
+}
+
+.goods .container .main .goods_category_switch {
+    margin-bottom: 10px;
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+}
+
+.goods .container .main .goods_category_switch
+.category_switch_item {
+    font-size: 19px;
+    font-weight: 600;
+    line-height: 150%;
+    padding: 2px 8px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #fff;
+    box-shadow: 3px 2px 2px;
+}
+
+.goods .container .main .goods_category_switch
+.category_switch_item.active {
+    color: #fff;
+    background: rgb(56, 56, 136);
+}
+
+.goods .container .main .goods_category_switch
+.category_switch_item:hover {
+    color: #fff;
+    background: rgb(56, 56, 136);
+    transition: all 300ms ease;
+}
+
+.goods .container .main .goods_category_switch
+.category_switch_item:first-child, 
+
+.goods .container .main .goods_category_switch
+.category_switch_item:last-child {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* Секция с товаром */
+
+.list_price {
+    display: grid;
+    grid-gap: 19px 21px;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 3fr));
+}
+
+.list_price .list_price_item {
+    display: block ;
+    padding: 0;
+    text-decoration: none;
+    z-index: 1;
+    margin-left: 25px;
+    margin-bottom: 50px;
+}
+
+.list_price .list_price_item .img {
+    margin-bottom: 8px;
+    display: block;
+    background-color: transparent;
+    margin-left: 10px;
+    margin-right: 25px;
+}
+
+.list_price .list_price_item .img img {
+    width: 100%;
+    height: 90%;
+    border-radius: 10px;
+    display: block;
+    min-width: 120%;
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+
+.list_price .list_price_item .good_title {
+    font-size: 20px;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 22px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #fff;
+    margin-bottom: 9px;
+    text-decoration: none;
+    margin-left: 25px;
+}
+
+.list_price .list_price_item .list_title {
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 15px;
+    color: #fff;
+    margin-left: 25px;
+}
+
+.list_price .list_price_item .list_old_price {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 22px;
+    text-decoration-line: line-through;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: #ff1616;
+    margin-left: 25px;
+}
+
+.list_price .list_price_item .list_price {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    font-feature-settings: "pnum" on, "lnum" on;
+    color: rgb(5, 243, 5);
+    margin-left: 25px;
+}
+
+/* Кнопка Купить */
+
+.goods .container .row {
+    margin-top: 56px;
+    margin-bottom: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.goods .container .row .btn {
+    max-width: 216px;
+    padding: 16px 41px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 16px 24px;
+    gap: 10px;
+    background: rgb(56, 56, 136);
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 22px;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Секция с обувью */
+body .shoes {
+    /* background: linear-gradient(90deg,#fff 10%, rgb(20, 20, 94) 98%);     */
+    overflow-x: hidden;
+    border-radius: 8px;
+    margin: 30px 40px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+body .shoes .btn_shoes {
+    margin: 30px auto;
+    font-size: 18px;
+    background: rgb(56, 56, 136);
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    border: 0;
+    cursor: pointer;
+    font-weight: 700;
+    font-style: normal;
+    line-height: 22px;
+    max-width: 150px;
+    padding: 16px 41px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+
+/* Footer Сайта */
+
+
+footer {
+	/* background: linear-gradient(90deg,#fff 10%, rgb(24, 24, 102)95%); */
+	padding: 50px 0;
+    border-radius: 15px;
+    min-width: 105%;
+
+}
+
+footer .blocks {
+	display: flex;
+	justify-content: space-between;
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+
+footer .blocks .About {
+    font-size: 25px;
+    margin-left: 40px;
+}
+
+footer .blocks .logo {
+    padding-top: 60px;
+    margin-right: 40px;
+    font-size: 30px;
+    font-weight: 500;
+    width: auto;
+}
+
+footer .blocks .logo_p {
+    padding-top: 60px;
+    margin-right: 40px;
+    font-size: 16px;
+    color: #fff;
+    width: auto;
+}
+
+footer .blocks p {
+	width: 300px;
+	margin: 15px 0;
+}
+
+footer .blocks h4 {
+	font-weight: 500;
+	font-size: 27px;
+}
+
+footer .blocks ul  {
+	list-style: none;    
+}
+
+footer .blocks ul > li {
+    font-size: 23px;
+	margin-top: 7px;
+}
+
+footer .blocks .contacts > h4 > a,
+footer .blocks .contacts > ul > li > a {
+    color: #fff;
+}
+
+footer .blocks .contacts > ul > li > a:hover {
+    transition: all 500ms ease;
+	cursor: pointer;
+	transform: scale(1.1);
+	color: #cf3253;
+    font-size: 33px;
+}
+
+footer .one {
+    font-size: 30px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+footer > p {
+	text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    padding: 8px 10px;
+    color: #fff;
+}
+
+footer .blocks h4 > a:hover {
+    transition: all 500ms ease;
+	cursor: pointer;
+	transform: scale(1.1);
+	color: #cf3253;
+    font-size: 33px;
+}
